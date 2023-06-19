@@ -1,0 +1,1014 @@
+:root {
+     --hue-color: 250;
+     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+     --text-color-light: hsl(var(--hue-color), 8%, 65%);
+     --black: #1c0522;
+     --orderColor: #2f2f36;
+     --learnColor: #d2cdd0;
+     --light-brown: #4d4f53;
+     --lighter-brown: #73767c;
+     --learnColor2: #f0e8ec;
+}
+
+@font-face {
+     font-family: 'D-DIN';
+     src: url('../D-DIN.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'D-DIN-Bold';
+     src: url('../D-DIN-Bold.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     font-family: 'D-DIN', sans-serif;
+     box-sizing: border-box;
+}
+
+body {
+     min-height: 100vh;
+     background: #000;
+}
+
+svg {
+     width: auto;
+     height: 26px;
+     transform: translateY(-8px);
+}
+
+svg path,
+svg polygon,
+svg rect {
+     fill: #fff;
+}
+
+header {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 40px 15px 40px 110px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 99;
+     position: fixed;
+     transition: top 0.3s ease-in-out;
+}
+
+.nav-up {
+     top: -110px;
+}
+
+header ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.midUl {
+     position: relative;
+     left: -7%;
+}
+
+header ul li {
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-right: 30px;
+}
+
+header ul li a {
+     text-decoration: none;
+     color: #fff;
+     border-radius: 5px;
+     font-weight: 600;
+     font-size: 13.5px;
+     text-transform: uppercase;
+     align-self: center;
+}
+
+header ul li span {
+     content: '';
+     justify-content: start;
+     align-self: start;
+     width: 0;
+     height: 1px;
+     margin-top: 3px;
+     background: #fff;
+     transition: width 0.2s ease;
+}
+
+header ul li i {
+     font-size: 20px;
+     cursor: pointer;
+}
+
+/*Content*/
+.parts {
+     height: 100vh;
+     width: 100%;
+     background-size: cover;
+     background-position: center center;
+     display: flex;
+}
+
+/*--------------------------------*/
+
+.section1 .contentDiv {
+     width: 100%;
+     height: 100%;
+     opacity: 1;
+     transition: opacity 0.6s ease;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+.contentDivAfter {
+     opacity: 0;
+}
+
+.section1 h2 {
+     font-family: 'D-DIN-Bold', sans-serif;
+     font-size: 98px;
+     font-weight: 500;
+     text-align: center;
+     color: #fff;
+     /*position: absolute;
+     top: 25px;
+     left: 45%;*/
+     -webkit-font-smoothing: antialiased;
+     margin-bottom: 13px;
+     z-index: 2;
+}
+
+.section1 h3 {
+     font-family: 'D-DIN', sans-serif;
+     font-weight: 100;
+     color: #fff;
+     text-align: center;
+     font-size: 16px;
+     margin-bottom: 122px;
+     z-index: 2;
+}
+.section1 .overlay {
+     position: absolute;
+     background-color: #000;
+     width: 100%;
+     height: 100%;
+     opacity: 0.4;
+}
+
+
+.section2 {
+     height: 904px;
+}
+
+.section2 .overlay {
+     position: absolute;
+     background-color: #000;
+     width: 100%;
+     height: 820px;
+     opacity: 0.3;
+     z-index: 5;
+}
+
+.section2 .myswiper {
+     overflow: hidden;
+     height: 820px;
+}
+.section2 .swiper-slide img {
+     width: 100%;
+     height: 820px;
+     object-fit: cover;
+     object-position: center center;
+}
+
+.swiper-pagination{
+     transform: translateY(870px);
+}
+.swiper-pagination-bullet{
+     background: #73767c ;
+     opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+     background: #fff;
+}
+
+.swiper-prev-but{
+     position: absolute;
+     left: 60px;
+     transform: translateY(30px);
+     cursor: pointer;
+     z-index: 5;
+}
+
+.swiper-next-but{
+     position: absolute;
+     right: 60px;
+     transform: translateY(30px);
+     cursor: pointer;
+     z-index: 5;
+}
+
+.section2 .swiper-slide .textDiv{
+     position: absolute;
+     transform: translateY(-120px);
+     color: #fff;
+     margin-left: 70px;
+     z-index: 5;
+}
+.section2 .swiper-slide .textDiv h2{
+     font-size: 45px;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+
+.section2 .swiper-slide .textDiv h3{
+     font-size: 16px;
+     font-weight: 300;
+}
+
+
+.section4{
+     display: flex;
+     flex-direction: row;
+     height: 852px;
+     background-color: #000;
+}
+
+.section4 img{
+     width: 50%;
+     object-fit: cover;
+     object-position: 43% center;
+     z-index: 20;
+}
+
+.section4 .contentDiv{
+     color: #fff;
+     padding-right: 50px;
+     padding-left: 10px;
+     z-index: 20;
+     background-color: #000;
+}
+
+.section4 .contentDiv h2{
+     font-size: 45px;
+     font-weight: 800;
+     text-transform: uppercase;
+     margin-bottom: 25px;
+     margin-top: 70px;
+}
+
+
+.section4 .contentDiv h3{
+     font-size: 16px;
+     font-weight: 200;
+     line-height: 25px;
+     margin-bottom: 25px;
+     opacity: 0.9;
+}
+
+.section4 .contentDiv ul li{
+     list-style: none;
+     text-transform: uppercase;
+     color: #969696;
+     font-size: 14px;
+     font-weight: 700;
+     margin-right: 30px;
+     transition: color .3s ease;
+     cursor: pointer;
+
+}
+
+.section4 .contentDiv ul li:hover{
+     color: #fff;
+
+}
+
+.section4 .contentDiv ul li.activeLi{
+     color: #fff;
+     border-bottom: 1px solid #fff;
+}
+
+.section4 .contentDiv ul{
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 20px;
+}
+
+ 
+.section4 .contentDiv table{
+     width: 100%;
+     border-collapse: collapse;
+     margin-bottom: 20px;
+}
+
+.section4 .contentDiv table td{
+     width: 260px;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     font-size: 14px;
+     font-family: "D-Din-Bold";
+     border-bottom: 1pt solid rgba(255,255,255,.3);
+}
+
+.section4 .contentDiv table td:nth-child(2){
+     text-align: end;
+     font-size: 16px;
+}
+
+
+.section4 .contentDiv button{
+     color: #fff;
+     border: 2px solid #fff;
+     background-color: transparent;
+     padding: 20px 65px;
+     transition: background-color .3s ease;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 700;
+     margin-top: 10px;
+}
+
+.section4 .contentDiv button:hover{
+     color: #000;
+     background-color: #fff;
+}
+
+
+.section6{
+     width: 100%;
+     height: max-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 100px;
+     overflow: hidden;
+     background-image: url(https://www.spacex.com/human-spaceflight/assets/images/background-gradient.jpg);
+
+}
+.section6 h2{
+     color: #fff;
+     font-size: 45px;
+     font-weight: 800;
+     text-transform: uppercase;
+     margin-bottom: 100px;
+}
+
+.section6 .section6div{
+     width: 100%;
+     height: 854px;
+     display: flex;
+     flex-direction: row;
+}
+
+.section6 .contentDiv{
+     position: absolute;
+     width: 34%;
+     transform: translateY(300px);
+     margin-left: 65px;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+}
+
+.section6 .section6div video{
+     width: 100%;
+     transform: translateX(250px);
+}
+
+.section6 .contentDiv h3,
+.section7 .contentDiv h3{
+     color: #fff;
+     font-size: 35px;
+     font-weight: 800;
+     text-transform: uppercase;
+     margin-bottom: 25px;
+}
+
+.section6 .contentDiv p,
+.section7 .contentDiv p{
+     color: #fff;
+     font-size: 16px;
+     font-weight: 200;
+     line-height: 25px;
+     margin-bottom: 25px;
+     opacity: 0.9;
+}
+.section6 .contentDiv button,
+.section7 .contentDiv button{
+     width: max-content;
+     color: #fff;
+     border: 2px solid #fff;
+     background-color: transparent;
+     padding: 20px 65px;
+     transition: background-color .3s ease;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 700;
+     margin-top: 10px;
+}
+
+.section6 .contentDiv button:hover,
+.section7 .contentDiv button:hover{
+     color: #000;
+     background-color: #fff;
+}
+
+.section7{
+     height: 556px;
+     padding: 80px 0px;
+     display: flex;
+     flex-direction: row;
+
+}
+
+.section7 figure{
+     width: 50%;
+     object-fit: cover;
+     object-position: center center;
+}
+
+.section7 figure img{
+     object-fit: cover;
+     object-position: center center;
+}
+
+.section7 .contentDiv{
+     padding-left: 50px;
+     padding-top: 50px;
+}
+
+.section7 .contentDiv p{
+     width: 500px;
+}
+
+.section8{
+     width: 100%;
+     height: max-content;
+     overflow: hidden;
+     opacity: 0.5;
+     transition: opacity 0.5s ease;
+}
+
+.section8 img{
+     width: 100%;
+     height: 380px;
+     object-fit: cover;
+     object-position: center center;
+     transition: transform 0.8s ease;
+}
+
+.section9{
+     width: 100%;
+     height: max-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 200px;
+}
+
+.section9 h2{
+     width: 700px;
+     color: #fff;
+     font-size: 46px;
+     font-weight: 800;
+     font-family: 'D-DIN-Bold';
+     text-transform: uppercase;
+     margin-bottom: 100px;
+     text-align: center;
+     overflow: hidden;
+
+}
+
+.section9 .myswiper2{
+     width: 100%;
+     overflow: hidden;
+}
+
+.section9 .swiper-slide img {
+     height: 264px;
+     width: 435px;
+     object-fit: cover;
+     object-position: center center;
+}
+
+.section9 .swiper-slide{
+     overflow: hidden;
+}
+
+.section9 .swiper-pagination2{
+     margin-top: 20px;
+     transform: translateX(650px);
+}
+.swiper-pagination-bullet{
+     background: #73767c ;
+     opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+     background: #fff;
+}
+
+.section9 .swiper-prev-but2{
+     position: absolute;
+     left: 60px;
+     transform: translateY(30px);
+     cursor: pointer;
+     z-index: 5;
+}
+
+.section9 .swiper-next-but2{
+     position: absolute;
+     right: 60px;
+     transform: translateY(30px);
+     cursor: pointer;
+     z-index: 5;
+}
+
+.section9 .swiper-slide .textDiv{
+     width: 300px;
+     position: absolute;
+     color: #fff;
+     z-index: 5;
+     margin-left: 20px;
+     transform: translateY(-110px)
+}
+.section9 .swiper-slide .textDiv h2{
+     font-size: 20px;
+     font-weight: 20;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     text-align: start;
+}
+
+.section9 .swiper-slide .textDiv h3{
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 20px;
+
+}
+
+.section9 .overlay {
+     position: absolute;
+     background-color: #000;
+     width: 100%;
+     height: 100%;
+     opacity: 0.3;
+     z-index: 5;
+}
+
+
+.section5{
+     width: 100%;
+     height: 1030px;
+     margin-top: 100px;
+     display: flex;
+     flex-direction: column;
+     background-image: url(https://www.spacex.com/human-spaceflight/assets/images/background-gradient.jpg);
+}
+
+.section5 h2{
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     font-size: 45px;
+     font-weight: 800;
+     text-transform: uppercase;
+}
+
+.section5 svg{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     text-align: right;
+     transform: translateY(100px);
+}
+
+.section5 svg g{
+     cursor: pointer;
+     z-index: 10;
+}
+
+.section5 svg g circle{
+     fill: #ffff;
+     transition: fill 0.3 ease;
+     z-index: 12;
+
+}
+
+.section5 svg g.is-active circle{
+     fill: #3390ff;
+}
+
+.section5 svg g:hover circle{
+     fill: #3390ff;
+}
+
+.section5 svg g circle:hover{
+     fill: #3390ff;
+}
+
+.section5 img{
+     width: 816px;
+     height: 980px;
+     margin: 0px 351px;
+}
+
+.section5 .suitTextDiv {
+     position: absolute;
+     width: 500px;
+     opacity: 0;
+     transition: opacity 0.5s ease
+}
+
+.section5 .suitTextDiv  h3{
+     color: #fff;
+     text-align: right;
+     font-size: 20px;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+}
+
+.section5 .suitTextDiv  p{
+     width: 400px;
+     font-weight: 250;
+     line-height: 25px;
+     text-align: end;
+     color: #fff;
+     margin-top: 15px;
+     transform: translateX(100px);
+}
+
+.section5 .textDiv2 h3,.section5 .textDiv2 p,
+.section5 .textDiv4 h3,.section5 .textDiv4 p,
+.section5 .textDiv6 h3,.section5 .textDiv6 p{
+     text-align: left;
+     transform: translateX(0px);
+}
+
+.section5 .textDiv1{
+     opacity: 1;
+     transform: translateY(230px) translateX(790px);
+}
+
+.section5 .textDiv3{
+     transform: translateY(440px) translateX(850px);
+}
+
+.section5 .textDiv5{
+     transform: translateY(640px) translateX(850px);
+}
+
+.section5 .textDiv2{
+     transform: translateY(220px) translateX(220px);
+}
+
+.section5 .textDiv4{
+     transform: translateY(390px) translateX(200px);
+}
+
+.section5 .textDiv6{
+     transform: translateY(600px) translateX(215px);
+}
+
+.section5 .lineDiv{
+     display: flex;
+     flex-direction: row;
+}
+
+.section5 .lineDiv .tiltLine{
+     width: 120px;
+     height: 1px;
+     background-color: #fff;
+     transform: rotate(30deg) translateY(-28px);
+}
+
+.section5 .lineDiv .horLine{
+     width: 100%;
+     height: 1px;
+     background-color: #fff;
+     transform: translateX(7px);
+}
+
+.section5 .textDiv2 .lineDiv .horLine{
+     transform: translateX(5px);
+}
+
+
+.section5 .textDiv4 .lineDiv .tiltLine{
+     transform: rotate(30deg) translateY(21px) translateX(10px);
+}
+
+.section5 .textDiv6 .lineDiv .tiltLine{
+     transform: rotate(330deg) translateY(-21px) translateX(12px);
+}
+
+
+.section3{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+}
+
+.section3 h2{
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     font-size: 45px;
+     font-weight: 800;
+     text-transform: uppercase;
+     margin-bottom: 100px;
+}
+
+.section3 .frontimgDiv{
+     width: 100%;
+     height: 100%;
+     justify-content: center;
+     z-index: 10;
+     display: flex;
+     flex-direction: row;
+     overflow-x: hidden;
+}
+
+
+.section3 img{
+     width: 360px;
+     height: 220px;
+     cursor: pointer;
+}
+
+.section3 .frontimgDiv .img0{
+     width: min-content;
+     height: min-content;
+     position: absolute;
+     top: 280%;
+     transform: rotate(20deg);
+     /*transition: transform 2s ease;*/
+}
+
+.section3 .frontimgDiv .img0 svg{
+     width: 584px;
+     height: 584px;
+     opacity: 0.5;
+
+}
+
+.section3 .img0 img{
+     width: 200px;
+     height: 65px;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateX(-150px) rotate(-20deg);
+}
+
+.section3 .img0 img:hover{
+     content: url(https://www.spacex.com/human-spaceflight/assets/images/destination-iss-hover.svg);
+}
+
+.section3 .frontimgDiv .img1{
+     width: min-content;
+     height: min-content;
+     position: absolute;
+     top: 270%;
+     transform: rotate(40deg);
+     /*transition: transform 2s ease;*/
+}
+
+.section3 .frontimgDiv .img1 svg{
+     width: 720px;
+     height: 720px;
+     opacity: 0.5;
+}
+.section3 .img1 img{
+     width: 190px;
+     height: 53px;
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateX(-150px) rotate(-40deg);
+}
+
+.section3 .img1 img:hover{
+     content: url(https://www.spacex.com/human-spaceflight/assets/images/destination-dragon-hover.svg);
+}
+/*
+.section3 .frontimgDiv .img2{
+     width: 915px;
+     height: 915px;
+     position: absolute;
+     transform: rotate(20deg);
+}*/
+.section3 .frontimgDiv .img2{
+     width: min-content;
+     height: min-content;
+     position: absolute;
+     top: 260%;
+     transform: rotate(60deg);
+     /*transition: transform 2s ease;*/
+}
+
+.section3 .frontimgDiv .img2 svg{
+     width: 915px;
+     height: 915px;
+     opacity: 0.5;
+}
+.section3 .img2 img{
+     width: 189px;
+     height: 148px;
+     position: absolute;
+     top: 10%;
+     left: 0;
+}
+
+.section3 .img2 img:hover{
+     content: url(https://www.spacex.com/human-spaceflight/assets/images/destination-moon-hover.svg);
+}
+
+.section3 .frontimgDiv .img3{
+     width: min-content;
+     height: min-content;
+     position: absolute;
+     top: 230%;
+     transform: rotate(0deg); 
+     /*transition: transform 2s ease; 20deg*/
+}
+
+.section3 .frontimgDiv .img3 svg{
+     width: 100%;
+     height: 100%;
+
+}
+.section3 .img3 img{
+     width: 360px;
+     height: 220px;
+     transform:translateX(100px);
+}
+
+.section3 .img3 img:hover{
+     content: url(https://www.spacex.com/human-spaceflight/assets/images/destination-mars-hover.svg);
+}
+
+.section3 .orbitDiv2{
+     position: absolute;
+     display: inline-block;
+     width: 700px;
+     height: 700px;
+     border: 3px dotted #fff;
+     border-radius: 50%;
+     border-spacing: 10px;
+     opacity: 0.2;
+     transform: translateY(350px);
+     overflow: hidden;
+     transition: transform 0.5s ease;
+}
+.section3 .orbitDiv{
+     position: absolute;
+     display: inline-block;
+     width: 550px;
+     height: 550px;
+     border: 3px dotted #fff;
+     border-radius: 50%;
+     border-spacing: 10px;
+     opacity: 0.2;
+     transform: translateY(350px);
+     overflow: hidden;
+     transition: transform 0.5s ease;
+}
+.section3 .orbitDiv3{
+     position: absolute;
+     display: inline-block;
+     width: 850px;
+     height: 850px;
+     border: 3px dotted #fff;
+     border-radius: 50%;
+     border-spacing: 10px;
+     opacity: 0.2;
+     transform: translateY(350px);
+     overflow: hidden;
+     transition: transform 0.5s ease;
+}
+
+@keyframes rotate360 {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+   
+
+.section3 .bgimg{
+     width: 378px;
+     height: 171px;
+}
+
+
+/**************FOOTER*****************/
+footer {
+     background: #000;
+     padding-top: 40px;
+     padding-bottom: 40px;
+}
+
+.footDiv {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+.footDiv li {
+     list-style: none;
+     margin-left: 45px;
+}
+
+.footDiv li a {
+     text-decoration: none;
+     color: #fff;
+     font-weight: 700;
+     font-size: 12.5px;
+     text-transform: uppercase;
+     transition: color 0.5s ease;
+}
+
+.footDiv li a:hover {
+     color: var(--lighter-brown);
+}
+
+.footDiv .titleFoot {
+     color: var(--lighter-brown);
+     font-weight: 300;
+}
+
+.spacex {
+     width: max-content;
+     padding: 16px 15px;
+
+     border: 2px solid #fff;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     position: relative;
+}
+
+.spacex-hover {
+     width: 100%;
+     height: 100%;
+     background-color: #fff;
+
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     transform: scaleY(0);
+     transform-origin: top center;
+
+     transition: transform 0.3s;
+}
+
+.spacex:hover .spacex-hover {
+     transform: scaleY(1);
+     transform-origin: bottom center;
+}
+
+.spacex-text {
+     font-weight: 700;
+
+     font-size: 14px;
+
+     width: 100%;
+     color: #fff;
+     text-align: center;
+     position: relative;
+     transition: color 0.2s ease;
+     text-transform: uppercase;
+}
+
+.spacex:hover .spacex-text {
+     color: #000;
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+     <title>SpaceX - Dragon</title>
+
+     <link rel="icon" href="../favicon.ico" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css" />
+     <script src="https://kit.fontawesome.com/736b8c9e75.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="Dragon.css" />
+</head>
+
+<body>
+
+     <header>
+          <svg version="1.1" x="0px" y="0px" viewbox="0 0 400 50">
+               <title>SpaceX Logo</title>
+               <g class="letter_s">
+                    <path class="fill-white" d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+                 c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z" />
+               </g>
+               <g class="letter_p">
+                    <path class="fill-white" d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+                 c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z" />
+               </g>
+               <g class="letter_a">
+                    <polygon class="fill-white"
+                         points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	" />
+               </g>
+               <g class="letter_c">
+                    <path class="fill-white" d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+                 c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z" />
+               </g>
+               <g class="letter_e">
+                    <polygon class="fill-white"
+                         points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	" />
+                    <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4" />
+               </g>
+               <g class="letter_x">
+                    <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z" />
+                    <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z" />
+               </g>
+               <g class="letter_swoosh">
+                    <path class="fill-white"
+                         d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z" />
+               </g>
+          </svg>
+          <ul class="midUl">
+               <li>
+                    <a href="../Falcon 9/Falcon9.html" onmouseover="showLine(event)"
+                         onmouseleave="returnLine(event)">Falcon 9</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="https://www.spacex.com/vehicles/falcon-9/" onmouseover="showLine(event)"
+                         onmouseleave="returnLine(event)">Falcon Heavy</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Dragon</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Starship</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="../Spaceflight/Spaceflight.html" onmouseover="showLine(event)"
+                         onmouseleave="returnLine(event)">Human Spaceflight</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Rideshare</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="https://www.spacex.com/starshield/" onmouseover="showLine(event)"
+                         onmouseleave="returnLine(event)">Starshield</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Starlink</a>
+                    <span class="linkLine"></span>
+               </li>
+          </ul>
+          <ul>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Shop</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a><i class="uil uil-bars"></i></a>
+               </li>
+          </ul>
+     </header>
+
+     <section class="content" id="fullpage">
+          <section
+               class="section parts section1">
+               <img id="img_section1" src="https://www.spacex.com/static/images/backgrounds/dragon_feature.jpg" alt="">
+               <div class="contentDiv" id="showDiv1">
+
+                    <h2 id="h2Content" class="h2Content">DRAGON</h2>
+                    <h3 class="h3Solar" id="h3Solar">SENDING HUMANS AND CARGO INTO SPACE</h3>
+
+               </div>
+          </section>
+          <section class="parts section2">
+               <div class="statPart">
+                    <div class="statPiece">
+                         <h2 id="statH2_1">41</h2>
+                         <h3>TOTAL LAUNCHES</h3>
+                    </div>
+                    <div class="statPiece">
+                         <h2 id="statH2_2">36</h2>
+                         <h3>VISITS TO THE ISS</h3>
+                    </div>
+                    <div class="statPiece">
+                         <h2 id="statH2_3">18</h2>
+                         <h3>TOTAL REFLIGHTS</h3>
+                    </div>
+               </div>
+          </section>
+          <div class="fixParagraph">
+               <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond.
+                    It is the only spacecraft currently flying that is capable of returning significant amounts of cargo
+                    to Earth, and is the first private spacecraft to take humans to the space station.</p>
+          </div>
+          <section class="parts section3"
+               style="background-image: url(https://www.spacex.com/static/images/dragon/desktop/DragonTrunk_Lines_Desktop.jpg);">
+               <!--<p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond.
+                    It is the only spacecraft currently flying that is capable of returning significant amounts of cargo
+                    to Earth, and is the first private spacecraft to take humans to the space station.</p>-->
+               <div class="lowerSection">
+                    <div class="myswiper" id="theswiper">
+                         <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                   
+                                   <div class="imageDiv" id="imageDiv">
+                                        <video id="reveal-video2" autoplay loop muted width="100%" height="100%"
+                                             preload="auto" autobuffer="true">
+                                             <source type="video/mp4"
+                                                  src="https://www.spacex.com/media/DragonTrunk_Animation_Render_Desktop.mp4">
+                                        </video>
+                                   </div>
+                                   <div class="detailDiv1">
+                                        <h3>DRAGON</h3>
+                                        <h2>OVERVIEW</h2>
+                                        <table>
+                                             <tbody>
+                                                  <tr>
+                                                       <td>HEIGHT</td>
+                                                       <td>8.1 m <span>/ 26.7 ft</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>DIAMETER</td>
+                                                       <td>4 m <span>/ 13 ft</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>CAPSULE VOLUME</td>
+                                                       <td>9.3 m³ <span>/ 328 ft³</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>TRUNK VOLUME</td>
+                                                       <td>37 m³ <span>/ 1300 ft³</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>LAUNCH PAYLOAD MASS</td>
+                                                       <td>6,000 kg <span>/ 13,228 lbs</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>RETURN PAYLOAD MASS</td>
+                                                       <td>3,000 kg <span>/ 6,614 lbs</span></td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
+     
+                              <div class="swiper-slide" style="background-image: url(https://www.spacex.com/static/images/dragon/desktop/Trunk_Render_Desktop.jpg);">
+                                   <div class="aslide">
+                                        <div class="detailDiv1">
+                                             <h3>DRAGON</h3>
+                                             <h2>TRUNK</h2>
+                                             <p>Dragon’s trunk not only carries unpressurized cargo but also supports the spacecraft during ascent. One half of the trunk is covered in solar panels that provide power to Dragon during flight and while on-station. The trunk remains attached to Dragon until shortly before reentry into Earth’s atmosphere.</p>
+                                             <table>
+                                                  <tbody>
+                                                       <tr>
+                                                            <td>VOLUME</td>
+                                                            <td>37 m³ <span>/ 1300 ft³</span></td>
+                                                       </tr>
+                                                       
+                                                  </tbody>
+                                             </table>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="swiper-slide slide3" style="background-image: url(https://www.spacex.com/static/images/dragon/desktop/Dragon_Render_Desktop.jpg);">
+                                   <div class="aslide">
+
+                                        <div class="detailDiv1">
+                                             <h3>DRAGON</h3>
+                                             <h2>CAPSULE</h2>
+
+                                             <div class="switchDiv">
+                                                  <h3 class="activeSwitch" id="fairSwitch" onclick="capsuleSwitch(0,event)">
+                                                       OVERVIEW</h3>
+                                                  <div class="lineDiv"></div>
+                                                  <h3 id="dragSwitch" onclick="capsuleSwitch(1,event)">LAUNCH ABORT</h3>
+                                                  <div class="lineDiv"></div>
+                                                  <h3 id="dragSwitch" onclick="capsuleSwitch(2,event)">ATTITUDE CONTROL</h3>
+                                             </div>
+                                             <p id="capsuleP">The Dragon capsule, also known as the pressurized section, allows for the transport of people as well as environmentally sensitive cargo. Dragon is equipped with Draco thrusters that allow Dragon to maneuver while on orbit and 8 SuperDracos that power the spacecraft’s launch escape system.</p>
+                                             <table>
+                                                  <tbody>
+                                                       <tr>
+                                                            <td>VOLUME</td>
+                                                            <td>9.3 m³ <span>/ 328 ft³</span></td>
+                                                       </tr>
+                                                       
+                                                  </tbody>
+                                             </table>
+                                        </div>
+                                   </div>
+                              </div>
+     
+                         </div>
+                         <div class="swiper-pagination"></div>
+     
+                         <div class="swiper-prev-but">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                                   <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                        transform="translate(6) rotate(90)" fill="#fff"></path>
+                              </svg>
+                         </div>
+                         <div class="swiper-next-but">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                                   <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                        transform="translate(0 10) rotate(-90)" fill="#fff"></path>
+                              </svg>
+                         </div>
+                    </div>
+               </div>
+               
+          </section>
+
+          <section class="parts section4"
+               style="background-image: url(https://www.spacex.com/static/images/backgrounds/dragon_video.jpg);">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64.025"
+                    height="81.486" viewBox="0 0 64.025 81.486" class="play-arrow" aria-label="play button">
+                    <g>
+                         <path d="M8,5V86.486L72.025,45.743Z" transform="translate(-8 -5)" fill="#fff"></path>
+                    </g>
+               </svg>
+               <div class="contentDiv">
+                    <h4>VIDEO</h4>
+                    <h2>CREW DRAGON INTERIOR</h2>
+               </div>
+          </section>
+
+          <section class="parts section4 section5"
+               style="background-image: url(https://www.spacex.com/static/images/backgrounds/dragon_humans.jpg);">
+
+               <div class="contentDiv">
+                    <h2>TAKING HUMANS TO SPACE</h2>
+                    <h4>In 2020, SpaceX returned America’s ability to fly NASA astronauts to and from the International
+                         Space Station on American vehicles for the first time since 2011. In addition to flying
+                         astronauts to space for NASA, SpaceX’s Dragon spacecraft can also carry commercial astronauts
+                         to Earth orbit, the ISS or beyond.</h4>
+                    <div class="butDiv" id="butDiv">
+                         <a class="spacex">
+                              <div class="spacex-hover"></div>
+                              <span class="spacex-text">LEARN MORE</span>
+                         </a>
+                    </div>
+               </div>
+          </section>
+
+          <section class="parts section6"
+               style="background-image: url(https://www.spacex.com/static/images/dragon/desktop/Draco.jpg);">
+               <div class="contentDiv">
+                    <h3>ENGINES</h3>
+                    <h2>DRACO</h2>
+                    <div class="switchDiv">
+                         <h3 class="activeSwitch" id="seaSwitch" onclick="engineSwitch(0,event)">DRACO</h3>
+                         <div class="lineDiv"></div>
+                         <h3 id="vacuumSwitch" onclick="engineSwitch(1,event)">SUPERDRACO</h3>
+                    </div>
+                    <p id="engineP">The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during
+                         the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each
+                         Draco thruster is capable of generating 90 pounds of force in the vacuum of space.</p>
+                    <table>
+                         <tbody>
+                              <tr>
+                                   <td>NUMBER OF ENGINES</td>
+                                   <td>16</td>
+                              </tr>
+                              <tr>
+                                   <td>THRUST IN VACUUM</td>
+                                   <td id="kNelement">400 N <span id="lbfElement">/ 90 lbf</span></td>
+                              </tr>
+                         </tbody>
+                    </table>
+               </div>
+          </section>
+
+          <section class="parts section7">
+
+               <div class="contentDiv">
+                    <h2>DRAGON PARACHUTE SYSTEM</h2>
+                    <h4>The Dragon spacecraft is equipped with two drogue parachutes to stabilize the spacecraft
+                         following reentry and four main parachutes to further decelerate the spacecraft prior to
+                         landing.</h4>
+                    <div class="butDiv" id="butDiv">
+                         <a class="spacex">
+                              <div class="spacex-hover"></div>
+                              <span class="spacex-text">WATCH VIDEO</span>
+                         </a>
+                    </div>
+               </div>
+               <div class="imgDiv">
+                    <div style="background-image: url(https://www.spacex.com/static/images/dragon/parachute.jpg);">
+                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                              width="64.025" height="81.486" viewBox="0 0 64.025 81.486" class="play-arrow"
+                              aria-label="play button">
+                              <g>
+                                   <path d="M8,5V86.486L72.025,45.743Z" transform="translate(-8 -5)" fill="#fff"></path>
+                              </g>
+                         </svg>
+                    </div>
+               </div>
+          </section>
+
+          <section class="parts section8">
+               <div class="myswiper2">
+                    <div class="swiper-wrapper swiperContainer">
+                         <!-- Slides -->
+                         <div class="swiper-slide sec_aslide sec_slide1"></div>
+                         <div class="swiper-slide sec_aslide sec_slide2"></div>
+                         <div class="swiper-slide sec_aslide sec_slide3"></div>
+                         <div class="swiper-slide sec_aslide sec_slide4"></div>
+                         <div class="swiper-slide sec_aslide sec_slide5"></div>
+                    </div>
+
+                    <div class="contentDiv">
+                         <div class="swiper-prev-but2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                                   <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                        transform="translate(6) rotate(90)" fill="#fff"></path>
+                              </svg>
+                         </div>
+                         <h3 id="slideText">Dragon on pad at Launch Complex 39A</h3>
+                         <div class="swiper-next-but2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                                   <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                        transform="translate(0 10) rotate(-90)" fill="#fff"></path>
+                              </svg>
+                         </div>
+
+                    </div>
+
+               </div>
+          </section>
+
+
+
+
+     </section>
+
+     <footer>
+          <ul class="footDiv" id="footerDiv">
+               <li><a href="#" class="titleFoot">SPACEX © 2023</a></li>
+               <li><a href="#">Twitter</a></li>
+               <li><a href="#">Youtube</a></li>
+               <li><a href="#">Instagram</a></li>
+               <li><a href="#">Flickr</a></li>
+               <li><a href="#">Linkedin</a></li>
+               <li><a href="#">Privacy policy</a></li>
+               <li><a href="#">suppliers</a></li>
+          </ul>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script src="Dragon.js"></script>
+</body>
+
+</html>

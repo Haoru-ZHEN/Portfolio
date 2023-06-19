@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+     <title>SpaceX - Human Spaceflight</title>
+
+     <link rel="icon" href="../favicon.ico" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css" />
+     <script src="https://kit.fontawesome.com/736b8c9e75.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="Spaceflight.css" />
+</head>
+
+<body>
+
+     <header>
+          <svg version="1.1" x="0px" y="0px" viewbox="0 0 400 50">
+               <title>SpaceX Logo</title>
+               <g class="letter_s">
+                    <path class="fill-white" d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+                 c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z" />
+               </g>
+               <g class="letter_p">
+                    <path class="fill-white" d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+                 c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z" />
+               </g>
+               <g class="letter_a">
+                    <polygon class="fill-white"
+                         points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	" />
+               </g>
+               <g class="letter_c">
+                    <path class="fill-white" d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+                 c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z" />
+               </g>
+               <g class="letter_e">
+                    <polygon class="fill-white"
+                         points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	" />
+                    <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4" />
+               </g>
+               <g class="letter_x">
+                    <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z" />
+                    <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z" />
+               </g>
+               <g class="letter_swoosh">
+                    <path class="fill-white"
+                         d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z" />
+               </g>
+          </svg>
+          <ul class="midUl">
+               <li>
+                    <a href="../Falcon 9/Falcon9.html" onmouseover="showLine(event)"
+                         onmouseleave="returnLine(event)">Falcon 9</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="https://www.spacex.com/vehicles/falcon-9/" onmouseover="showLine(event)"
+                         onmouseleave="returnLine(event)">Falcon Heavy</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Dragon</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Starship</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="https://www.spacex.com/human-spaceflight/" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Human Spaceflight</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Rideshare</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Starshield</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Starlink</a>
+                    <span class="linkLine"></span>
+               </li>
+          </ul>
+          <ul>
+               <li>
+                    <a href="#" onmouseover="showLine(event)" onmouseleave="returnLine(event)">Shop</a>
+                    <span class="linkLine"></span>
+               </li>
+               <li>
+                    <a><i class="uil uil-bars"></i></a>
+               </li>
+          </ul>
+     </header>
+
+     <section class="content" id="fullpage">
+          <section style="background-image: url(https://www.spacex.com/human-spaceflight/assets/images/HS-hero.webp)"
+               class="section parts section1">
+               <div class="contentDiv">
+
+                    <h2 id="h2Content" class="h2Content">HUMAN SPACEFLIGHT</h2>
+                    <h3 class="h3Solar" id="h3Solar">Making life multiplanetary</h3>
+
+               </div>
+               <div class="overlay">
+
+               </div>
+          </section>
+          <section class="parts section2">
+               <div class="myswiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                         <!-- Slides -->
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/on-orbit.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>ON-orbit</h2>
+                                   <h3>View Earth from 300 km up</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/launch-crop.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>launch</h2>
+                                   <h3>Listen as the crew prepares for liftoff</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/Splashdown_Photo_01.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>splashdown</h2>
+                                   <h3>Listen to the crew prepare for landing</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/Training_01.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>training</h2>
+                                   <h3>Watch crew prepare for launch day</h3>
+                              </div>
+                         </div>
+
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-prev-but">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                              <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                   transform="translate(6) rotate(90)" fill="#fff"></path>
+                         </svg>
+                    </div>
+                    <div class="swiper-next-but">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                              <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                   transform="translate(0 10) rotate(-90)" fill="#fff"></path>
+                         </svg>
+                    </div>
+               </div>
+               <!--<div class="overlay"></div>-->
+          </section>
+
+          <section class="parts section3">
+               <h2>DESTINATIONS</h2><!--
+               <div class="orbitDiv"></div>
+               <div class="orbitDiv2"></div>
+               <div class="orbitDiv3"></div>-->
+
+               <div class="frontimgDiv">
+                    <div class="imgDiv img0">
+                         <img src="https://www.spacex.com/human-spaceflight/assets/images/destination-iss.svg" alt="">
+                         <svg viewBox="0 0 585 585"><circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="1.0015,7.0106" cx="292.5" cy="292.5" r="292"></circle></svg>
+                    </div>
+                    <div class="imgDiv img1">
+                         <img src="https://www.spacex.com/human-spaceflight/assets/images/destination-dragon.svg" alt="">
+                         <svg viewBox="0 0 585 585"><circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="1.0015,7.0106" cx="292.5" cy="292.5" r="292"></circle></svg>
+                    </div>
+                    <div class="imgDiv img2">
+                         <img src="https://www.spacex.com/human-spaceflight/assets/images/destination-moon.svg" alt="">
+                         
+                         <svg viewBox="0 0 916 916"><circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="1.0009,7.0065" cx="458" cy="458" r="457.5"></circle></svg>
+                         
+                    </div>
+                    <div class="imgDiv img3">
+                         <img src="https://www.spacex.com/human-spaceflight/assets/images/destination-mars.svg" alt="">
+                         <svg viewBox="0 0 2401 2401"><circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-dasharray="0.9996,6.9969" cx="1200.5" cy="1200.5" r="1200"></circle></svg>
+                    </div>
+               </div>
+               
+               
+               <img class="bgimg" src="https://www.spacex.com/human-spaceflight/assets/images/Earth.svg" alt="">
+          </section>
+          <section class="parts section4">
+               <img src="https://www.spacex.com/human-spaceflight/assets/images/Our_Mission_01.jpg" alt="">
+               <div class="contentDiv">
+                    <h2>OUR MISSIONS</h2>
+                    <h3>All Dragon and Starship missions have the ability to conduct scientific research to improve life back on Earth as well as raise awareness to a global audience.</h3>
+                    <ul class="missionUl">
+                         <li class="activeLi" onclick="missionchange(0,event)">earth orbit</li>
+                         <li onclick="missionchange(1,event)">space station</li>
+                         <li onclick="missionchange(2,event)">moon</li>
+                         <li onclick="missionchange(3,event)">mars</li>
+                    </ul>
+                    <table id="table2">
+                         <tbody>
+                              <tr>
+                                   <td>ORBIT FREQUENCY</td>
+                                   <td>Every 90 minutes</td>
+                              </tr>
+                              <tr>
+                                   <td>MISSION DURATION</td>
+                                   <td>3 - 6 days</td>
+                              </tr>
+                              <tr>
+                                   <td>ALTITUDE</td>
+                                   <td>300 – 500 km</td>
+                              </tr>
+                              <tr>
+                                   <td>SEATING</td>
+                                   <td>2 - 4 passengers</td>
+                              </tr>
+                              <tr>
+                                   <td>CUPOLA</td>
+                                   <td>46” diameter / 360° views</td>
+                              </tr>
+                              <tr>
+                                   <td>CARGO / SCIENCE</td>
+                                   <td>Up to 192 kg cargo<br>Power / Data / Comm available</td>
+                              </tr>
+                         </tbody>
+                    </table>
+                    <h3 class="missionh3">Missions available for 2023 and 2024</h3>
+                    <button>join a mission</button>
+               </div>
+          </section>
+          <section class="parts section5">
+               <h2>THE SUIT</h2>
+               <svg viewBox="0 0 816 980" class="svg-new">
+                    
+        
+                    <g class="is-large is-active" data-callout="helmet" onclick="showsuit(0,event)">
+                         <circle fill-opacity="0.5" cx="470.6" cy="154.9" r="17.5"></circle>
+                         <circle cx="470.6" cy="154.9" r="11.6"></circle>
+                     </g>
+                     <g class="is-large" data-callout="elbow" onclick="showsuit(2,event)">
+                         <circle fill-opacity="0.5" cx="543.8" cy="422.6" r="17.5"></circle>
+                         <circle cx="543.8" cy="422.6" r="11.6"></circle>
+                     </g>
+                     <g class="is-large" data-callout="gloves" onclick="showsuit(4,event)">
+                         <circle fill-opacity="0.5" cx="534.5" cy="557.7" r="17.5"></circle>
+                         <circle cx="534.5" cy="557.7" r="11.6"></circle>
+                     </g>
+                     <g class="is-large" data-callout="knee" onclick="showsuit(5,event)">
+                         <circle fill-opacity="0.5" cx="345.1" cy="615.6" r="17.5"></circle>
+                         <circle cx="345.1" cy="615.6" r="11.6"></circle>
+                     </g>
+                     <g class="is-large" data-callout="visor" onclick="showsuit(1,event)">
+                         <circle fill-opacity="0.5" cx="370.3" cy="202.8" r="17.5"></circle>
+                         <circle cx="370.3" cy="202.8" r="11.6"></circle>
+                     </g>
+                     <g class="is-large" data-callout="zippers" onclick="showsuit(3,event)">
+                         <circle fill-opacity="0.5" cx="322.8" cy="490" r="17.5"></circle>
+                         <circle cx="322.8" cy="490" r="11.6"></circle>
+                     </g>
+                     
+                  </svg>
+               <img src="https://www.spacex.com/human-spaceflight/assets/images/the-suit-new.png" alt="">
+
+               <div class="suitTextDiv textDiv1">
+                    <h3>3-D printed helmet</h3>
+                    <div class="lineDiv">
+                         <span class="tiltLine"></span>
+                         <span class="horLine"></span>
+                    </div>
+                    <p>The 3-D printed helmet with customized padding houses microphones for communication and valves that regulate the suit’s pressure systems.</p>
+               </div>
+               <div class="suitTextDiv textDiv2">
+                    <h3>visor</h3>
+                    <div class="lineDiv">
+                         <span class="horLine"></span>
+                    </div>
+                    <p>Designed to provide a large field of view and rotates open.</p>
+               </div>
+               <div class="suitTextDiv textDiv3">
+                    <h3>outer layer</h3>
+                    <div class="lineDiv">
+                         <span class="tiltLine"></span>
+                         <span class="horLine"></span>
+                    </div>
+                    <p>The space suit’s outer layer is made with flame-resistant materials. Gray parts are different versions of Nomex and the white material is a Teflon fabric.</p>
+               </div>
+               <div class="suitTextDiv textDiv4">
+                    <h3>zippers</h3>
+                    <div class="lineDiv">
+                         <span class="horLine"></span>
+                         <span class="tiltLine"></span>
+                    </div>
+                    <p>Zippers on the wrist allow astronauts to use their bare hands on the controls when appropriate. Zippers also run inside a seam inside the legs, from one ankle to the other, which is where the crew gets into and out of the suit.</p>
+               </div>
+               <div class="suitTextDiv textDiv5">
+                    <h3>touchscreen compatible gloves</h3>
+                    <div class="lineDiv">
+                         <span class="tiltLine"></span>
+                         <span class="horLine"></span>
+                    </div>
+                    <p>The gloves are designed for easy use when the suit is pressurized and with the ability to operate Dragon’s touchscreens.</p>
+               </div>
+               <div class="suitTextDiv textDiv6">
+                    <h3>quick disconnect</h3>
+                    <div class="lineDiv">
+                         <span class="horLine"></span>
+                         <span class="tiltLine"></span>
+                    </div>
+                    <p>A single connection point between the suit and vehicle provides the life support system for the astronauts: avionics for communications, cooling systems, and pressurization of the suit, all via an easy-to-use plug-in.</p>
+               </div>
+          </section>
+          <section class="parts section6">
+               <h2>THE VEHICLES</h2>
+               <div class="section6div">
+                    <video autoplay loop muted width="100%" height="100%"
+                                        preload="auto" autobuffer="true">
+                                        <source type="video/mp4"
+                                             src="https://www.spacex.com/human-spaceflight/assets/images/dragon-comp.mp4">
+                    </video>
+                    <div class="contentDiv">
+                         <h3>DRAGON</h3>
+                         <p>The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.</p>
+                         <button>learn more</button>
+                    </div>
+               </div>
+          </section>
+          <section class="parts section7">
+               <img src="https://www.spacex.com/human-spaceflight/assets/images/starship.webp" alt="">
+
+               <div class="contentDiv">
+                    <h3>STARSHIP</h3>
+                    <p>Starship is the fully reusable spacecraft and second stage of the Starship system. The vehicle offers an integrated payload section and is capable of carrying passengers and cargo to Earth orbit, planetary destinations, and between destinations on Earth.</p>
+                    <button>learn more</button>
+               </div>
+          </section>
+          <section class="parts section8">
+               <img src="https://www.spacex.com/human-spaceflight/assets/images/horizon.webp" alt="">
+          </section>
+
+          <section class="parts section9">
+               <h2>THE ROAD TO MAKING HUMANITY MULTIPLANETARY</h2>
+               <div class="myswiper2">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                         <!-- Slides -->
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/2010.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>2010</h2>
+                                   <h3>Falcon 9 successfully completes its first flight</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/HS_TIMELINE_2012_View of Dragon From ISS Credit NASA 52412 7.webp" alt="">
+                              <div class="textDiv">
+                                   <h2>2012</h2>
+                                   <h3>Dragon becomes the first privately developed spacecraft to visit the space station</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/2015-land-landing.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>2015</h2>
+                                   <h3>Falcon 9’s first successful land landing</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/2016_Landing_Droneship.jpeg" alt="">
+                              <div class="textDiv">
+                                   <h2>2016</h2>
+                                   <h3>Falcon 9’s first successful droneship landing</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/2017_SES-10_east_deck.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>2017</h2>
+                                   <h3>First successful reflight of Falcon 9</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/HS_TIMELINE_2018_FH_40126461851_14b93ec9d7_o.webp" alt="">
+                              <div class="textDiv">
+                                   <h2>2018</h2>
+                                   <h3>First launch of Falcon Heavy</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/HS_TIMELINE_2020_DM2_1325342image_1595460496.webp" alt="">
+                              <div class="textDiv">
+                                   <h2>2020</h2>
+                                   <h3>SpaceX returns human spaceflight to the United States</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/HS_TIMELINE_2021_SN15_51171019709_7ff8e1ba76_o.webp" alt="">
+                              <div class="textDiv">
+                                   <h2>2021</h2>
+                                   <h3>Starship SN15 completes high-altitude flight test</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/2021-i4.jpg" alt="">
+                              <div class="textDiv">
+                                   <h2>2021</h2>
+                                   <h3>Falcon 9 launches first all-civilian crew to orbit on Dragon</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/HS_TIMELINE_2022_STARSHIP_51924610024_f67feb91ba_o.webp" alt="">
+                              <div class="textDiv">
+                                   <h2>2022</h2>
+                                   <h3>Starship Super Heavy full stack</h3>
+                              </div>
+                         </div>
+                         <div class="swiper-slide">
+                              <div class="overlay"></div>
+                              <img src="https://www.spacex.com/human-spaceflight/assets/images/timeline/HS_TIMELINE_2008_Falcon-1-Flight-5-06.webp" alt="">
+                              <div class="textDiv">
+                                   <h2>2008</h2>
+                                   <h3>Falcon 1 becomes first privately developed liquid fueled rocket to reach orbit</h3>
+                              </div>
+                         </div>
+
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination2"></div>
+
+                    <div class="swiper-prev-but2">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                              <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                   transform="translate(6) rotate(90)" fill="#fff"></path>
+                         </svg>
+                    </div>
+                    <div class="swiper-next-but2">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                              <path d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                                   transform="translate(0 10) rotate(-90)" fill="#fff"></path>
+                         </svg>
+                    </div>
+               </div>
+          </section>
+
+
+     </section>
+
+     <footer>
+          <ul class="footDiv" id="footerDiv">
+               <li><a href="#" class="titleFoot">SPACEX © 2023</a></li>
+               <li><a href="#">Twitter</a></li>
+               <li><a href="#">Youtube</a></li>
+               <li><a href="#">Instagram</a></li>
+               <li><a href="#">Flickr</a></li>
+               <li><a href="#">Linkedin</a></li>
+               <li><a href="#">Privacy policy</a></li>
+               <li><a href="#">suppliers</a></li>
+          </ul>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script src="Spaceflight.js"></script>
+</body>
+
+</html>
